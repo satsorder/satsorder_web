@@ -1,0 +1,37 @@
+{
+  "name": "1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:test": "dotenv -e .env.test next build",
+    "start": "next start",
+    "export:test": "dotenv -e .env.test next build && next export",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "ahooks": "^3.7.2",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.3",
+    "ethers": "^5.7.2",
+    "next": "13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.6",
+    "recoil-persist": "^4.2.0",
+    "viem": "^0.3.21",
+    "wagmi": "^1.0.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "clsx": "^1.2.1",
+    "dotenv-cli": "^6.0.0",
+    "postcss": "^8.4.19",
+    "sass": "^1.56.1",
+    "tailwind-merge": "^1.8.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
