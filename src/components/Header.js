@@ -31,6 +31,7 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
@@ -38,10 +39,10 @@ export default function Header() {
   }, [])
 
   return (
-    <header data-aos="fade-down" data-aos-once="true" className={classnames('fixed top-0 left-0 w-full h-[100px] z-50 transition-all duration-300',
+    <header className={classnames('fixed top-0 left-0 w-full h-[100px] z-50 transition-all duration-300',
       showHeaderBg && 'backdrop-blur-[100px]'
     )}>
-      <div className="container mx-auto h-full flex items-center justify-between">
+      <div data-aos="fade-down" data-aos-once="true" className="container mx-auto h-full flex items-center justify-between">
         <Logo className="w-[174px] h-10" />
         <div className='flex flex-wrap items-center gap-5'>
           {
