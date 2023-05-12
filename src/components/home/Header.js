@@ -76,7 +76,7 @@ export default function Header() {
   return (
     <>
       <header className={classnames('fixed top-0 left-0 w-full h-[100px] z-30 transition-all duration-300',
-        showHeaderBg && 'backdrop-blur-[100px]'
+        showHeaderBg && 'backdrop-blur-[20px]'
       )}>
         <div data-aos="fade-down" data-aos-once="true" className="container mx-auto h-full flex items-center justify-between">
           <Logo className="w-[174px] h-10" />
