@@ -38,7 +38,7 @@ export default function Section() {
           }
 
         </div>
-        <div className='mt-28 w-full font-semibold text-2xl max-w-[906px] text-center mx-auto'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
+        <div className='mt-28 w-full font-semibold text-2xl max-w-[906px] text-center mx-auto capitalize'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
         <div className='mt-16 h-16 w-[226px] border border-white rounded-full text-2xl font-bold flex items-center justify-center cursor-pointer'>Join Us</div>
       </div>
     </div>

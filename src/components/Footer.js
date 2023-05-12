@@ -13,11 +13,11 @@ export default function Footer() {
           <a className='w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center' href='https://twitter.com/SatsOrder' target="_blank" rel="noreferrer">
             <TwitterIcon className="text-[48px]" />
           </a>
-          <a className='w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center' href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer">
-            <DiscordIcon className="text-[48px]" />
-          </a>
           <a className='w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center' href="https://t.me/SatsOrder_EN" target="_blank" rel="noreferrer">
             <TelegramIcon className="text-[48px]" />
+          </a>
+          <a className='w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center' href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer">
+            <DiscordIcon className="text-[48px]" />
           </a>
         </div>
       </div>

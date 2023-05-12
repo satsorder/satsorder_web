@@ -61,6 +61,7 @@ export default function Section() {
                   ))
                 }
               </div>
+              <p className='mt-7 opacity-70'>Ended, 2 days ago</p>
             </div>
           </div>
 
