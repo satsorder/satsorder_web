@@ -17,7 +17,7 @@ export default function Section() {
               background: 'linear-gradient(28.39deg, #7E6FFE 7.38%, #FF9CFB 90.71%)',
             }}
           >
-            <Image className='w-[61.946%]' width={420} height={659} src={getImgUrl('section5_main.png')} loading="eager" alt='' />
+            <Image className='w-full' width={678} height={700} src={getImgUrl('section5_main.png')} loading="eager" alt='' />
           </div>
           <div data-aos="zoom-in-left" className='flex-1 h-full bg-[#18181E] rounded-[20px]'
             style={{

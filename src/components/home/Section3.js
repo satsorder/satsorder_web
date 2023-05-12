@@ -4,9 +4,9 @@ import { getImgUrl } from '@/utils'
 
 export default function Section() {
   const list = [
-    { id: 1, name: '6.5M VeSTG', status: 'Yes', value: '95.6%'},
-    { id: 2, name: '177K VeSTG', status: 'No', value: '2.61%'},
-    { id: 3, name: '122K VeSTG', status: 'Abstain', value: '1.79%'},
+    { id: 1, name: '6.5M Nals', status: 'Yes', value: '95.6%'},
+    { id: 2, name: '177K Nals', status: 'No', value: '2.61%'},
+    { id: 3, name: '122K Nals', status: 'Abstain', value: '1.79%'},
   ]
   return (
     <div className="w-full pt-20 pb-44">
@@ -24,7 +24,7 @@ export default function Section() {
 
         <div className='mt-16 w-full flex items-center'>
           {/* left */}
-          <div data-aos="zoom-in-right" className='flex-1 bg-[#18181E] rounded-[20px] px-[53px] py-[60px]'>
+          <div data-aos="zoom-in-right" className='w-[56.628%] bg-[#18181E] rounded-[20px] px-[53px] py-[60px]'>
             <div className=' bg-[#202225] p-9 rounded-[20px]'
               style={{
                 boxShadow: '0px 175px 70px rgba(0, 0, 0, 0.01), 0px 98px 59px rgba(0, 0, 0, 0.05), 0px 44px 44px rgba(0, 0, 0, 0.09), 0px 11px 24px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)',
@@ -33,13 +33,19 @@ export default function Section() {
               <div className='w-full flex items-center justify-between'>
                 <div className='flex items-center '>
                   <Image className='w-8 h-8 rounded-full' width={32} height={32} src={getImgUrl('avatar_1.png')} loading="eager" alt='' />
-                  <div className='ml-4 font-medium'>0xCff5...8D6e</div>
+                  <div className='ml-4 font-medium'>bc1pd...ktwec</div>
                 </div>
                 <div className='py-1 px-5 bg-[#7E6FFE] rounded-full font-semibold text-xs'>CLOSED</div>
               </div>
 
-              <h1 className='mt-7 w-full font-semibold text-2xl'>Velodrome Strategy Update</h1>
-              <p className='mt-3 w-full opacity-70'>{`Background Following implementation of Stargate's incentive program onVelodrome, TVL for the STG-USDC pair has grown over $7M and currently offer...`}</p>
+              <h1 className='mt-7 w-full font-semibold text-2xl'>Replace the avatar of $Nals</h1>
+              <div className='mt-3 w-full opacity-70'>
+              <p>I just think it's ugly. It's so ugly. Can someone please change the picture of Nals!</p>
+              <p>I want you to help me: </p>
+              <p>- push the vote to more than 80 per cent. </p>
+              <p>- find the Community Operations Manager and change the Nals avatar, like Brc20-io</p>
+              </div>
+
               <div className='mt-7'>
                 {
                   list.map(item => (
