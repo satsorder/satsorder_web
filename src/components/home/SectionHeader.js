@@ -2,7 +2,7 @@ import { classnames } from "@/utils";
 
 export default function Section({first, second, color = '2'}) {
   return (
-    <div className="h-[97px] mx-auto flex items-center justify-center">
+    <div data-aos="zoom-in-up" className="h-[97px] mx-auto flex items-center justify-center">
       <svg width="10" height="21" viewBox="0 0 10 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.69185 9.05142L1.44644 0.788757L0.00676873 2.23144L8.25217 10.4941L9.69185 9.05142Z" fill="white"/>
         <path d="M1.43969 20.2112L9.68509 11.9485L8.24542 10.5059L1.22395e-05 18.7685L1.43969 20.2112Z" fill="white"/>

@@ -8,10 +8,10 @@ export default function Section() {
       }}
     >
       <div className="container mx-auto h-full flex flex-col justify-center">
-        <h1 className="font-bold text-[100px] leading-[1.2em] capitalize">Shape the Next</h1>
-        <h1 className="font-bold w-[335px] text-[100px] leading-[1.34em] custom-text-bg">Future</h1>
-        <p className="mt-5 max-w-[798px] text-2xl leading-[1.5em]">The community voting tool, built around the Ordinals protocol is the beginning of the usefulness of BRC Coin and another.</p>
-        <div className="mt-16 w-[226px] h-16 border border-white rounded-full font-bold text-[22px] capitalize flex items-center justify-center cursor-pointer">
+        <h1 data-aos="fade-up" data-aos-once="true" data-aos-delay="" className="font-bold text-[100px] leading-[1.2em] capitalize">Shape the Next</h1>
+        <h1 data-aos="fade-up" data-aos-delay="50" className="font-bold w-[335px] text-[100px] leading-[1.34em] custom-text-bg">Future</h1>
+        <p data-aos="fade-up" data-aos-delay="100" className="mt-5 max-w-[798px] text-2xl leading-[1.5em]">The community voting tool, built around the Ordinals protocol is the beginning of the usefulness of BRC Coin and another.</p>
+        <div data-aos="fade-up" data-aos-delay="150" className="mt-16 w-[226px] h-16 border border-white rounded-full font-bold text-[22px] capitalize flex items-center justify-center cursor-pointer">
           Get started
         </div>
       </div>

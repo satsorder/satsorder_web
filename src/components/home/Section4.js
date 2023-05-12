@@ -20,8 +20,8 @@ export default function Section() {
 
         <div className='mt-16 w-full flex items-center gap-16'>
           {
-            list.map(item => (
-              <div key={item.id} className={classnames('rounded-full bg-red-100 overflow-hidden',
+            list.map((item, i) => (
+              <div data-aos="zoom-in-up" data-aos-delay={i * 100} key={item.id} className={classnames('rounded-full bg-red-100 overflow-hidden',
                 item.type === 1 && 'flex-1',
                 item.type === 2 && 'flex-[2]',
                 item.bgType === 1 && 'bg-[#7E6FFE]',
@@ -38,8 +38,8 @@ export default function Section() {
           }
 
         </div>
-        <div className='mt-28 w-full font-semibold text-2xl max-w-[906px] text-center mx-auto capitalize'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
-        <div className='mt-16 h-16 w-[226px] border border-white rounded-full text-2xl font-bold flex items-center justify-center cursor-pointer'>Join Us</div>
+        <div data-aos="fade-up" className='mt-28 w-full font-semibold text-2xl max-w-[906px] text-center mx-auto capitalize'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
+        <div data-aos="fade-up" className='mt-16 h-16 w-[226px] border border-white rounded-full text-2xl font-bold flex items-center justify-center cursor-pointer'>Join Us</div>
       </div>
     </div>
   )

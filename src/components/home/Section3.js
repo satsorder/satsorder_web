@@ -13,7 +13,7 @@ export default function Section() {
       <div className="container mx-auto">
         <SectionHeader first="Our" second="Showcase" />
 
-        <div className='mt-[60px] w-full rounded-[20px] flex justify-center items-end'
+        <div data-aos="zoom-in-up" className='mt-[60px] w-full rounded-[20px] flex justify-center items-end'
           style={{
             aspectRatio: '1388/600',
             background: 'linear-gradient(28.39deg, #7E6FFE 7.38%, #FF9CFB 90.71%)',
@@ -24,7 +24,7 @@ export default function Section() {
 
         <div className='mt-16 w-full flex items-center'>
           {/* left */}
-          <div className='flex-1 bg-[#18181E] rounded-[20px] px-[53px] py-[60px]'>
+          <div data-aos="zoom-in-right" className='flex-1 bg-[#18181E] rounded-[20px] px-[53px] py-[60px]'>
             <div className=' bg-[#202225] p-9 rounded-[20px]'
               style={{
                 boxShadow: '0px 175px 70px rgba(0, 0, 0, 0.01), 0px 98px 59px rgba(0, 0, 0, 0.05), 0px 44px 44px rgba(0, 0, 0, 0.09), 0px 11px 24px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)',
@@ -66,7 +66,7 @@ export default function Section() {
           </div>
 
           {/* right */}
-          <div className='flex-1 pl-20 2xl:pl-40'>
+          <div data-aos="zoom-in-left" className='flex-1 pl-20 2xl:pl-40'>
             <h1 className='font-semibold text-2xl leading-9 capitalize'>What can<br/>each character do?</h1>
             <p className='mt-4 opacity-70'>Gather opinions from real users in the community and listen to their voices. Promote your ideas and accept donations from coin holders.</p>
           </div>

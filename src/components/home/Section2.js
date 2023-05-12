@@ -16,8 +16,8 @@ export default function Section() {
 
         <div className='mt-[60px] w-full flex items-center justify-center gap-7'>
           {
-            list.map(item => (
-              <div key={item.id} className='w-[326px] h-[500px] rounded-[20px] pt-8 px-12'
+            list.map((item, i) => (
+              <div data-aos="fade-up" data-aos-delay={i * 100} key={item.id} className='w-[326px] h-[500px] rounded-[20px] pt-8 px-12'
                 style={{
                   background: '#18181E url(/images/section2_card_bg.png) no-repeat top center /100%',
                 }}
@@ -31,14 +31,14 @@ export default function Section() {
         </div>
 
         <div className='mt-20 w-full flex items-center gap-16'>
-          <div className='flex-1'>
+          <div data-aos="fade-up" data-aos-delay="" className='flex-1'>
             <h1 className='font-semibold text-2xl leading-9 capitalize'>What can<br/>each character do?</h1>
           </div>
-          <div className='flex-1'>
+          <div data-aos="fade-up" data-aos-delay="50" className='flex-1'>
             <h1 className='font-semibold text-xl px-6 border-l-[2px] border-l-[#7E6FFE]'>Builder</h1>
             <p className='mt-5 opacity-70'>Gather opinions from real users in the community and listen to their voices. Promote your ideas and accept donations from coin holders.</p>
           </div>
-          <div className='flex-1'>
+          <div data-aos="fade-up" data-aos-delay="100" className='flex-1'>
             <h1 className='font-semibold text-xl px-6 border-l-[2px] border-l-[#7E6FFE]'>Holder</h1>
             <p className='mt-5 opacity-70'>Vote for their ideal community input and build consensus to support the content they want to develop.</p>
           </div>

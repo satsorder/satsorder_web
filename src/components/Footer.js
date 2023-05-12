@@ -7,9 +7,11 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#7E6FFE]">
       <div className="container mx-auto flex items-center justify-between py-7">
-        <LogoIcon className="text-[100px]" />
-        <div className='font-semibold text-xl'>© SatsOrder. 2023 All Rights Reserved</div>
-        <div className='flex items-center gap-10 text-black'>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <LogoIcon className="text-[100px]" />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-bottom" className='font-semibold text-xl'>© SatsOrder. 2023 All Rights Reserved</div>
+        <div data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom" className='flex items-center gap-10 text-black'>
           <a className='w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center' href='https://twitter.com/SatsOrder' target="_blank" rel="noreferrer">
             <TwitterIcon className="text-[48px]" />
           </a>

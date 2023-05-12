@@ -11,7 +11,7 @@ export default function Section() {
         <SectionHeader first="Project" second="Declaration" color="1" />
 
         <div className='mt-16 w-full flex items-center gap-7'>
-          <div className='flex-1 rounded-[20px] flex items-end justify-center'
+          <div data-aos="zoom-in-right" className='flex-1 rounded-[20px] flex items-end justify-center'
             style={{
               aspectRatio: '678/700',
               background: 'linear-gradient(28.39deg, #7E6FFE 7.38%, #FF9CFB 90.71%)',
@@ -19,7 +19,7 @@ export default function Section() {
           >
             <Image className='w-[61.946%]' width={420} height={659} src={getImgUrl('section5_main.png')} loading="eager" alt='' />
           </div>
-          <div className='flex-1 h-full bg-[#18181E] rounded-[20px]'
+          <div data-aos="zoom-in-left" className='flex-1 h-full bg-[#18181E] rounded-[20px]'
             style={{
               aspectRatio: '678/700',
             }}

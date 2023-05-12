@@ -31,13 +31,14 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   return (
-    <header className={classnames('fixed top-0 left-0 w-full h-[100px] z-50 transition-all duration-300',
+    <header data-aos="fade-down" data-aos-once="true" className={classnames('fixed top-0 left-0 w-full h-[100px] z-50 transition-all duration-300',
       showHeaderBg && 'backdrop-blur-[100px]'
     )}>
       <div className="container mx-auto h-full flex items-center justify-between">
