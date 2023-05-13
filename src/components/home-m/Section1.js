@@ -12,9 +12,9 @@ export default function Section() {
       <LogoIcon className="w-8 h-8 my-16" />
       <p data-aos="fade-up" data-aos-delay="200" className="text-sm leading-[1.5em] capitalize text-center">The community voting tool, built around the Ordinals protocol is the beginning of the usefulness of BRC Coin and another.</p>
       <div className='w-full px-3 mt-10'>
-        <div data-aos="fade-up" data-aos-delay="300" className="w-full h-10 border border-white rounded-full bg-[#0D0D0F] bg-opacity-50 backdrop-blur-[10px] font-bold flex items-center justify-center">
+        <a data-aos="fade-up" data-aos-delay="300" className="w-full h-10 border border-white rounded-full bg-[#0D0D0F] bg-opacity-50 backdrop-blur-[10px] font-bold flex items-center justify-center" href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer">
           Get Started
-        </div>
+        </a>
       </div>
     </div>
   )

@@ -39,7 +39,7 @@ export default function Section() {
 
         </div>
         <div data-aos="fade-up" className='mt-28 w-full font-semibold text-2xl max-w-[906px] text-center mx-auto capitalize'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
-        <div data-aos="fade-up" className='mt-16 h-16 w-[226px] border border-white rounded-full text-2xl font-bold flex items-center justify-center cursor-pointer'>Join Us</div>
+        <a data-aos="fade-up" className='group mt-16 h-16 w-[226px] border border-white rounded-full text-2xl font-bold flex items-center justify-center cursor-pointer' href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer"><span className='group-hover:scale-110'>Join Us</span></a>
       </div>
     </div>
   )

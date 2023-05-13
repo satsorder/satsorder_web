@@ -11,9 +11,9 @@ export default function Section() {
         <h1 data-aos="fade-up" data-aos-once="true" data-aos-delay="" className="font-bold text-[100px] leading-[1.2em] capitalize">Shape the Next</h1>
         <h1 data-aos="fade-up" data-aos-delay="100" className="font-bold w-[335px] text-[100px] leading-[1.34em] custom-text-bg">Future</h1>
         <p data-aos="fade-up" data-aos-delay="200" className="mt-5 max-w-[798px] text-2xl leading-[1.5em] capitalize">The community voting tool, built around the Ordinals protocol is the beginning of the usefulness of BRC Coin and another.</p>
-        <div data-aos="fade-up" data-aos-delay="300" className="mt-16 w-[226px] h-16 border border-white rounded-full font-bold text-[22px] capitalize flex items-center justify-center cursor-pointer">
-          Get started
-        </div>
+        <a data-aos="fade-up" data-aos-delay="300" className="group mt-16 w-[226px] h-16 border border-white rounded-full font-bold text-[22px] capitalize flex items-center justify-center cursor-pointer" href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer">
+          <span className="group-hover:scale-110">Get started</span>
+        </a>
       </div>
     </div>
   )

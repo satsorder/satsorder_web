@@ -45,7 +45,7 @@ export default function Section() {
 
       <div data-aos="fade-up" className='mt-14 w-full font-semibold text-center capitalize'>We warmly welcome all builders who are passionate about community building to join satsorder and shape the future together.</div>
       <div data-aos="fade-up" className='mt-12 w-full px-3'>
-        <div className='w-full h-10 border border-white rounded-full font-bold flex items-center justify-center'>Join Us</div>
+        <a className='w-full h-10 border border-white rounded-full font-bold flex items-center justify-center' href="https://discord.gg/yFr6nZkX" target="_blank" rel="noreferrer">Join Us</a>
       </div>
     </div>
   )
