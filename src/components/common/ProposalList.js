@@ -1,15 +1,16 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import PlayIcon from '@/assets/icons/play.svg'
 import { classnames } from '@/utils'
 
 export default function Component({ list = [] }) {
 
   return list.map(item => (
-    <div key={item.id} className={classnames('w-full mb-4 border p-5 bg-[#0B0C0D] relative cursor-pointer',
+    <Link key={item.id} className={classnames('w-full block mb-4 border p-5 bg-[#0B0C0D] relative cursor-pointer',
       item.status === 'active' && 'border-[#12B846]',
       item.status === 'pending' && 'border-[#2B2824]',
       item.status === 'closed' && 'border-[#2B2824]',
-    )}>
+    )} href={`/proposals/${item.spaceName}/${item.id}`}>
       <div className='w-full flex items-center'>
         <Image className='w-[30px] h-[30px] mr-2 rounded-full' width={64} height={64} src={item.avatar} loading="eager" alt='' />
         <div className='text-[10px]'>
@@ -58,6 +59,6 @@ export default function Component({ list = [] }) {
       )}>
         {item.status}
       </div>
-    </div>
+    </Link>
   ))
 }
