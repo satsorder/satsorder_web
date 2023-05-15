@@ -1,7 +1,6 @@
-import PagePc from '@/components/proposals-detail/Index'
-// import PageM from '@/components/profile-m/Index'
+import PagePc from '@/components/space-detail/Index'
 
-export default function Detail() {
+export default function Page() {
   return (
     <>
       {/* <div className='hidden md:block w-full text-base'>

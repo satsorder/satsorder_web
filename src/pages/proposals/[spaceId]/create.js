@@ -1,7 +1,7 @@
 import PagePc from '@/components/proposals-create/Index'
 // import PageM from '@/components/profile-m/Index'
 
-export default function Create() {
+export default function Page() {
   return (
     <>
       {/* <div className='hidden md:block w-full text-base'>
