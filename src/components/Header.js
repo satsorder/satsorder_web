@@ -74,7 +74,7 @@ export default function Header() {
           </div>
 
           {/* social */}
-          <div className='ml-[50px] mr-8 hidden gap-[10px] items-center text-[#968B86] lg:flex'>
+          <div className='ml-12.5 mr-8 hidden gap-[10px] items-center text-[#968B86] lg:flex'>
             {
               socialList.map(item => (
                 <Link key={item.id} className='w-8 h-8 hover:text-white hover:scale-105' href={item.href} target='_blank'>

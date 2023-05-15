@@ -70,7 +70,7 @@ export default function Profile() {
         <div className="container mx-auto">
 
           {/* menu */}
-          <div className='w-full mt-12 h-[50px] border-b border-[#F09439]'>
+          <div className='w-full mt-12 h-12.5 border-b border-[#F09439]'>
             <div className='h-full flex items-center'>
               {
                 typeList.map(item => (

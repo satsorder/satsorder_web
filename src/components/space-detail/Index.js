@@ -58,7 +58,7 @@ export default function Home() {
     <>
       <Header />
       <main className="w-full text-white pt-[90px]">
-        <div className="container mx-auto mt-[50px] flex gap-[30px]">
+        <div className="container mx-auto mt-12.5 flex gap-[30px]">
           <div className='w-[380px] h-[222px] bg-[#110F0E] border-t-2 border-t-[#2B2824] p-5'>
             <div className='flex items-center'>
               <Image className='w-16 h-16 mr-3 border border-[#58534C] rounded-full' width={64} height={64} src={space.avatar} loading="eager" alt='' />
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex-1'>
-            <div className='w-full h-[50px] border-b border-[#F09439] flex items-center justify-between'>
+            <div className='w-full h-12.5 border-b border-[#F09439] flex items-center justify-between'>
               <div className='h-full px-5 font-bold text-xs border-b-[6px] border-b-[#E4C35F] flex items-center justify-center text-[#E4C35F]'>Proposals</div>
               <div className='w-[317px] h-full bg-[#110F0E] flex items-center px-4'>
                 <SearchIcon className="text-xl mr-2" />

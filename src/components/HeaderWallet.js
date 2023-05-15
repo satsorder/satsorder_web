@@ -125,7 +125,7 @@ export default function Wallet() {
             </div>
           </div>
           <div className='mt-8  w-full max-w-[448px]'>
-            <div className='h-[50px] border-b border-b-[#F09439] bg-[#110F0E] px-2 py-3'>
+            <div className='h-12.5 border-b border-b-[#F09439] bg-[#110F0E] px-2 py-3'>
               <input type="text" className='w-full h-full border-none outline-none bg-transparent font-bold text-lg' placeholder='Name'
                 value={userInfo.name} onChange={handleUserNameChange}
               />

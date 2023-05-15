@@ -41,7 +41,7 @@ export default function Home() {
           background: `url(${getImgUrl('proposal_bg.png')}) no-repeat top center / 100% 100%`,
         }}>
           <div className="w-full max-w-[664px] mx-auto">
-            <div className='w-full h-[50px] bg-black border-b border-b-[#F09439] px-4 flex items-center'>
+            <div className='w-full h-12.5 bg-black border-b border-b-[#F09439] px-4 flex items-center'>
               <SearchIcon className="text-xl mr-2" />
               <input type="text" className='flex-1 h-full border-none outline-none bg-transparent placeholder:text-[#58534C]' placeholder='Search by Spaces Name'
                 value={searchValue} onChange={handleSearchValueChange}
