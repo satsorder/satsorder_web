@@ -11,6 +11,8 @@ const nextConfig = {
     // 动态路由只需配置一个，key前缀有，最后一级名字无所谓
     return {
       "/": { page: "/" },
+      "/proposals": { page: "/proposals" },
+      "/profile": { page: "/profile" },
     };
   },
 

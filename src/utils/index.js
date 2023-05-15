@@ -18,8 +18,8 @@ export const sleep = (time) => {
   });
 }
 
-export const shortAddress = (address) => {
-  return address ? `${address.substr(0, 5)}...${address.substr(-4)}` : '';
+export const shortAddress = (address, start = 6, end = 4) => {
+  return address ? `${address.substr(0, start)}...${address.substr(-end)}` : '';
 }
 
 

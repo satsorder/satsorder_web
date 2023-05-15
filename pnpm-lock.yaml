@@ -13,6 +13,7 @@ specifiers:
   next: 13.0.3
   postcss: ^8.4.19
   react: 18.2.0
+  react-copy-to-clipboard: ^5.1.0
   react-dom: 18.2.0
   recoil: ^0.7.6
   recoil-persist: ^4.2.0
@@ -31,6 +32,7 @@ dependencies:
   ethers: 5.7.2
   next: 13.0.3_m5sxuueb27gk6ddc5gums6vtgq
   react: 18.2.0
+  react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   recoil: 0.7.6_biqbaboplfbrettd7655fr4n2y
   recoil-persist: 4.2.0_recoil@0.7.6
@@ -5517,6 +5519,16 @@ packages:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
     dependencies:
       safe-buffer: 5.2.1
+    dev: false
+
+  /react-copy-to-clipboard/5.1.0_react@18.2.0:
+    resolution: {integrity: sha512-k61RsNgAayIJNoy9yDsYzDe/yAZAzEbEgcz3DZMhF686LEyukcE1hzurxe85JandPUG+yTfGVFzuEw3xt8WP/A==}
+    peerDependencies:
+      react: ^15.3.0 || 16 || 17 || 18
+    dependencies:
+      copy-to-clipboard: 3.3.3
+      prop-types: 15.8.1
+      react: 18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
