@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { classnames, shortAddress } from '@/utils'
 import SortIcon from '@/assets/icons/sort.svg'
 import ProposalList from '@/components/common/ProposalList'
+import SpaceList from '@/components/common/SpaceList'
 // import Footer from './Footer'
 // import Section1 from './Section1'
 // import Section2 from './Section2'
@@ -14,18 +15,18 @@ import ProposalList from '@/components/common/ProposalList'
 export default function Profile() {
 
   const spaceList = [
-    {id: 1, name: 'PEPE', member: 405, avatar: '/mock/space_1.png'},
-    {id: 2, name: 'MEME', member: '206k', avatar: '/mock/space_1.png'},
-    {id: 3, name: 'moon', member: '1.4k', avatar: '/mock/space_1.png'},
-    {id: 4, name: 'ORDI', member: '374k', avatar: '/mock/space_1.png'},
-    {id: 5, name: 'vmpx', member: 885, avatar: '/mock/space_1.png'},
-    {id: 6, name: 'domo', member: 1004, avatar: '/mock/space_1.png'},
-    {id: 7, name: 'bank', member: '374k', avatar: '/mock/space_1.png'},
-    {id: 8, name: 'elon', member: 885, avatar: '/mock/space_1.png'},
-    {id: 9, name: 'BAYC', member: 1232, avatar: '/mock/space_1.png'},
-    {id: 10, name: 'Test1', member: 1232, avatar: '/mock/space_1.png'},
-    {id: 11, name: 'Test2', member: 1232, avatar: '/mock/space_1.png'},
-    {id: 12, name: 'Test3', member: 1232, avatar: '/mock/space_1.png'},
+    {id: 1, name: 'PEPE', member: 405, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 2, name: 'MEME', member: '206k', avatar: '/mock/space_1.png', isJoin: true},
+    {id: 3, name: 'moon', member: '1.4k', avatar: '/mock/space_1.png', isJoin: true},
+    {id: 4, name: 'ORDI', member: '374k', avatar: '/mock/space_1.png', isJoin: true},
+    {id: 5, name: 'vmpx', member: 885, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 6, name: 'domo', member: 1004, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 7, name: 'bank', member: '374k', avatar: '/mock/space_1.png', isJoin: true},
+    {id: 8, name: 'elon', member: 885, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 9, name: 'BAYC', member: 1232, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 10, name: 'Test1', member: 1232, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 11, name: 'Test2', member: 1232, avatar: '/mock/space_1.png', isJoin: true},
+    {id: 12, name: 'Test3', member: 1232, avatar: '/mock/space_1.png', isJoin: true},
   ]
 
   const tpAddress = 'bc1pe87c3w8f6scrtfemxxhtxn23ek96q5jce373mp8r3l2tl9tx39cq5z0qdj'
@@ -46,7 +47,7 @@ export default function Profile() {
     { label: 'Joined Space', value: 1 },
     { label: 'All Proposals', value: 2 },
   ]
-  const [currentType, setCurrentType] = useState(2)
+  const [currentType, setCurrentType] = useState(1)
   const handleTypeChange = (type) => {
     setCurrentType(type)
   }
@@ -88,19 +89,8 @@ export default function Profile() {
           {/* space box */}
           {
             currentType === 1 && (
-              <div className='mt-10 w-full flex items-center flex-wrap gap-[30px] grid-list-1'>
-                {
-                  spaceList.map(item => (
-                    <div key={item.id} className='h-[120px] border-t-2 border-[#2B2824] px-5 py-7 flex items-center grid-item'>
-                      <Image className='w-16 h-16 mr-4 border border-black rounded-full' width={64} height={64} src={item.avatar} loading="eager" alt='' />
-                      <div className='flex-1'>
-                        <div className='text-lg leading-6 font-bold mb-3'>{item.name}</div>
-                        <div className='text-[#58534C]'>{item.member} members</div>
-                      </div>
-                      <div className='self-start mt-2 underline text-[#968B86]'>Joined</div>
-                    </div>
-                  ))
-                }
+              <div className='mt-10 w-full'>
+                <SpaceList list={spaceList} />
               </div>
             )
           }

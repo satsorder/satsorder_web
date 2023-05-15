@@ -1,8 +1,5 @@
 import Image from 'next/image'
-import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
 import PlayIcon from '@/assets/icons/play.svg'
-import LoadingIcon from '@/assets/icons/loading.svg'
 import { classnames } from '@/utils'
 
 export default function Component({ list = [] }) {
