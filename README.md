@@ -1,13 +1,13 @@
-1. 开发环境
+1. local test
 ```
   pnpm install
   pnpm run dev
 ```
-2. 打包构建
+2. Pack online
 ```
   pnpm run export
 ```
-3. 打包文件目录
+3. File Directory
 ```
   ./out
 ```
